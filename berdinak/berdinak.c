@@ -28,6 +28,22 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
+char *fitx1 = argv[1];
+char *fitx2 = argv[2];
+struct stat stat_fitx1;     
+struct stat stat_fitx2;
+stat(fitx1, &stat_fitx1);
+stat(fitx2, &stat_fitx2);
+off_t tamaina_fitx1 = stat_fitx1.st_size; 
+off_t tamaina_fitx2 = stat_fitx2.st_size;
+
+if (tamaina_fitx1 != tamaina_fitx2) {
+close(fd1);
+close(fd2);
+exit(1);
+}
+
+
     while (1) {
         offset1 = lseek(fd1, offset1, SEEK_SET);
         offset2 = lseek(fd2, offset2, SEEK_SET);
