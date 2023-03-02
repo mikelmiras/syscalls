@@ -1,0 +1,9 @@
+Uste dut programa arazo bat zuela emaitza.txt fitxategia ezabatzen zuelako idatzi beharrean, hortaz ezin izan dut guztiz ondo frogatu.
+Izan ere, espero behar izan genuen emaitza sistema-deiak erabiltzen dituen programa azkarragoa dela da.
+
+Baina, zergatik gertatzen da hau?
+Sistema deiak erabiltzen ditugunean, zuzenan sistema eragilearen kernelari eskatzen diogu zerbait. Kernela zuzenean
+deitzen dugunez, erditik dauden abstrakzioak kentzen ditugu, eta operazio gutxiago gauzatzen dira gauza bera lortzeko.
+
+Liburutegiak erabiltzean abstrakzioak, buferrak eta datu aldaketak. Gainera, sistema-deiak egiten diren arte gerta daiteke beste dei batzuk egotea eta
+exekuzio-pila handiagoa izatea, exekuzio-denbora igotzen duena.
